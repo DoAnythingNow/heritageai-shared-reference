@@ -1,0 +1,52 @@
+/* ============================================================
+   HERITAGEAI — COLOUR TOKENS v2.0
+   June 2026
+   
+   Merged from:
+   - HeritageAI Design System v1 (core palette)
+   - tokens.json (additional mid-tones: slate, flint, chalk, goldDeep, goldPale)
+   
+   GOVERNANCE: Do not add colours without updating tokens.json on ZBook.
+   tokens.json is the source of truth. This file is the implementation.
+   ============================================================ */
+
+:root {
+
+  /* ── Page & Surface ── */
+  --color-bg:              #FAFAF8;   /* Warm White — page background */
+  --color-bg-warm:         #FDFCF9;   /* Slightly warmer white — from tokens.json */
+  --color-surface:         #F5F2EC;   /* Parchment — cards, panels, document previews */
+  --color-surface-raised:  #FFFFFF;   /* Pure white — elevated components, modals */
+  --color-chalk:           #EAE6DF;   /* Warm light grey — subtle surface variation */
+
+  /* ── Dark Scale — full ladder from tokens.json ── */
+  --color-obsidian:        #1A1814;   /* Primary text, headers, logo, footer bg */
+  --color-slate:           #2E2B26;   /* Sub-dark — secondary headings on dark backgrounds */
+  --color-flint:           #4A4640;   /* Warm dark grey — tertiary text on dark backgrounds */
+  --color-limestone:       #8C8476;   /* Secondary text, metadata, captions */
+  --color-portland:        #C4BDB2;   /* Dividers, borders, inactive states */
+
+  /* ── Gold — use once per viewport ── */
+  --color-gold:            #D4AF37;   /* THE accent. CTA border, active state, one underline */
+  --color-gold-deep:       #8B6914;   /* Dark gold — hover state for gold elements */
+  --color-gold-pale:       #EDD882;   /* Light gold — tint backgrounds */
+  --color-gold-muted:      #D4AF3720; /* 12% opacity — subtle hover backgrounds */
+
+  /* ── Semantic ── */
+  --color-heritage-green:       #2D4A3E;   /* Trust signals, success states, badge backgrounds */
+  --color-heritage-green-light: #EEF3F1;   /* Success background tint */
+  --color-intelligence-blue:    #1B3A6B;   /* Data, technical labels, link hover */
+  --color-intelligence-blue-light: #EEF1F7; /* Info background tint */
+  --color-copper:               #A0522D;   /* Warning states, highlighted changes */
+  --color-copper-light:         #F8F0EB;   /* Warning background tint */
+
+  /* ── Interaction ── */
+  --color-focus-ring:      #D4AF3780; /* 50% gold — keyboard focus ring */
+  --color-overlay:         #1A181480; /* 50% obsidian — modal overlays */
+
+  /* ── About section authority badge tiers (muted, top = green → bottom = red) ── */
+  --badge-tier-1:          #EEF3F1;   /* Conservation / environmental registers */
+  --badge-tier-2:          #F3EAE3;   /* Planning practice guidance */
+  --badge-tier-3:          #F5F0E3;   /* Historic England advice */
+  --badge-tier-4:          #F3E8E8;   /* Statutory policy / listing */
+}

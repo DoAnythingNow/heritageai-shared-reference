@@ -1,0 +1,79 @@
+/* ============================================================
+   HERITAGEAI — SPACING, SHADOW, RADIUS & ANIMATION TOKENS v2.0
+   June 2026
+   8px base grid.
+   
+   CORRECTIONS from tokens.json:
+   - radiusSm: 2px → 4px (2px reads as hard-edged/clinical)
+   - radiusMd: 4px → 8px (warmer, more considered)
+   - radiusLg: 8px → 12px (correct for cards and panels)
+   ============================================================ */
+
+:root {
+
+  /* ── Spacing — 8px Base Grid ── */
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-16: 128px;
+  --space-20: 160px;
+
+  /* ── Layout ── */
+  --container-max:    1280px;
+  --container-narrow: 800px;
+  --gutter:           24px;
+  --gutter-mobile:    16px;
+
+  /* ── Border Radius — corrected from tokens.json ── */
+  --radius-sm:   4px;    /* Badges, tags */
+  --radius-md:   8px;    /* Buttons, inputs */
+  --radius-lg:   12px;   /* Cards, panels */
+  --radius-xl:   16px;   /* Feature cards */
+  --radius-2xl:  24px;   /* Document preview */
+  --radius-full: 9999px; /* Pills */
+
+  /* ── Borders — from tokens.json, confirmed ── */
+  --border-default:  0.5px solid var(--color-portland);
+  --border-strong:   1px solid var(--color-limestone);
+  --border-rule:     1px solid var(--color-portland);
+  --border-gold:     1px solid var(--color-gold);
+
+  /* ── The Architectural Rule — vertical section anchor ── */
+  --rule-vertical-width:  1px;
+  --rule-vertical-color:  var(--color-portland);
+  --rule-vertical-active: var(--color-gold);
+
+  /* ── Shadows ── */
+  --shadow-sm:   0 1px 3px 0 rgba(26, 24, 20, 0.08);
+  --shadow-md:   0 4px 12px 0 rgba(26, 24, 20, 0.10);
+  --shadow-lg:   0 8px 32px 0 rgba(26, 24, 20, 0.12);
+  --shadow-gold: 0 0 0 2px var(--color-gold);
+  --shadow-gold-glow:
+    0 0 24px color-mix(in srgb, var(--color-gold) 35%, transparent),
+    0 0 48px color-mix(in srgb, var(--color-gold) 15%, transparent);
+  --shadow-blue-gold-glow:
+    0 0 32px color-mix(in srgb, var(--color-intelligence-blue) 45%, transparent),
+    0 0 24px color-mix(in srgb, var(--color-gold) 35%, transparent),
+    0 0 0 1px var(--color-gold);
+
+  /* ── Animation ── */
+  --duration-fast:   150ms;
+  --duration-base:   300ms;
+  --duration-slow:   600ms;
+  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:     cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Z-Index ── */
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-modal:    300;
+  --z-toast:    400;
+}
